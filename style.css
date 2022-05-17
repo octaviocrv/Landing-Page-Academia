@@ -1,0 +1,218 @@
+/* FONTS ------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap');
+ 
+/* RESET ------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  
+}
+
+
+
+
+
+/* TELA DE FUNDO -------------------------------------*/
+
+
+
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  font-family:'Poppins', sans-serif;
+  font-weight: 400;
+  
+
+}
+
+#background-home {
+  background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(fotoup.png);
+  background-position: center center;
+  background-size: cover;
+  background-position-y: 0px;
+  background-repeat: no-repeat;
+ 
+}
+
+
+/* Navigation - menu - itens -------------------------------------*/
+
+
+
+header .header {
+  
+  width: 90%;
+  background-color: rgba(51, 51, 51, 0.2);
+  position: fixed;
+
+  
+}
+
+
+
+
+.conteudo-menu {
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.4rem; 
+  
+
+  
+}
+
+
+.conteudo-menu h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: none;
+  color: white;
+  
+}
+
+section .logomenu{
+width: 60px;
+}
+
+
+
+.conteudo-menu .itens-lista {
+  display: flex; 
+  list-style: none;
+  gap: 10px; 
+}
+
+
+.conteudo-menu .itens-lista a {
+  color: white;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  transform: 2ms ease-in;
+  position: relative;
+  
+}
+
+.conteudo-menu .itens-lista a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  width: 0px;
+  height: 1px;
+  background-color: #FA7F08;
+  transition: all 0.5s ease;
+}
+
+
+.conteudo-menu .itens-lista a:hover::before {
+width: 100%;
+
+}
+
+
+
+/* Centro - Conteudo Principal -------------------------------------*/
+
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+/* Textos e conteudos principais  -------------------------------------*/
+
+.texto-primario {
+  width: 850px;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+color: white;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.texto-secundario {
+  margin-bottom: 7rem;
+  font-size: 2rem;
+  color: rgba(165, 165, 165);
+  text-transform: uppercase;
+ 
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+
+}
+
+/* Butões e Divider -------------------------------------*/
+
+.botoes {
+ display: flex;
+ gap: 28px;
+ justify-content: center;
+ 
+}
+
+.botoes button {
+  width: 250px;
+  height: 60px;
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  border-radius: 20px;
+  position: relative;
+  transition: 1.5s;
+ 
+}
+
+.botoes button:hover {
+  color: rgb(231, 138, 38) ;
+  border: none; 
+
+}
+
+.botoes button:before {
+  content: ' ';
+  border-radius: 20px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+  height: 60px;
+  background-color: rgb(61, 61, 61);
+  z-index: -1;
+  transition: 1s
+  
+}
+
+.botoes button:hover:before {
+  width: 100%;
+  
+  
+}
+
